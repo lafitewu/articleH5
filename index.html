@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>悦小说</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .bottom {
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 8vw;
+        height: 12vw;
+        border: 1px solid #fe7800;
+        text-align: center;
+        line-height: 12vw;
+        border-radius: 45px;
+        color: #fe7800;
+        text-decoration: none;
+    }
+        .bottom img {
+            width: 7.5%;
+            margin-right: 2vw;
+        }
+</style>
+<body>
+    <img src="images/gif.gif" alt="banner" width="100%">
+    <a class="bottom" href="#"><img src="images/task_list_coin_icon.png">前往阅读</a>
+</body>
+</html>
+<script>
+    function start() {
+        var elements = document.getElementsByClassName("bottom");   
+        var randomNum = Math.floor(Math.random()*20+1);
+        elements[0].href = "http://xiao.i5read.com/app/reader/644249/"+randomNum+"?bookStore=3&channel=yuett3&t=10&tk=yuett2018102305";
+        console.log(elements[0].href);
+    }
+    start();
+</script>
